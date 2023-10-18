@@ -1,7 +1,11 @@
 # Maven
-- task: SonarQubePublish@5
+- task: AzureAppServiceManage@0
   inputs:
-    pollingTimeoutSec: '300'
+    azureSubscription: 'Azure for Students(2e3f618e-ef76-457e-98e1-57e41c74bd15)'
+    Action: 'Swap Slots'
+    WebAppName: 'azure-arm'
+    ResourceGroupName: 'Azure-Training'
+    PreserveVnet: true
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
